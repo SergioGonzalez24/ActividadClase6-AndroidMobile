@@ -36,8 +36,7 @@ class AdaptadorPais(private val contexto: Context, var arrPaises: Array<Pais>) :
         return arrPaises.size
     }
 
-    class RenglonPais (var renglonPais: View) : RecyclerView.ViewHolder(renglonPais)
-    {
+    class RenglonPais (var renglonPais: View) : RecyclerView.ViewHolder(renglonPais) {
         fun set(pais: Pais) {
             renglonPais.findViewById<TextView>(R.id.tvPais).text = pais.nombre
             renglonPais.findViewById<TextView>(R.id.tvCasos).text = "${pais.casos}"

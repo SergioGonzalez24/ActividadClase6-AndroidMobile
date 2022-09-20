@@ -12,7 +12,6 @@ import mx.itesm.smgv.desplegandoinformacion.view.AdaptadorPais
 import mx.itesm.smgv.desplegandoinformacion.viewmodel.ListaPaisesVM
 
 class MainActivity : AppCompatActivity() {
-    
     // binding
     private lateinit var binding: ActivityMainBinding
 
@@ -59,4 +58,3 @@ class MainActivity : AppCompatActivity() {
         binding.rvPaises.addItemDecoration(divisor)
     }
 }
-
