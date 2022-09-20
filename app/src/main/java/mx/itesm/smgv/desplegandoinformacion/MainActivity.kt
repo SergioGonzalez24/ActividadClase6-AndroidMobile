@@ -12,6 +12,7 @@ import mx.itesm.smgv.desplegandoinformacion.view.AdaptadorPais
 import mx.itesm.smgv.desplegandoinformacion.viewmodel.ListaPaisesVM
 
 class MainActivity : AppCompatActivity() {
+    
     // binding
     private lateinit var binding: ActivityMainBinding
 
@@ -27,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // configurarRV()
+        configurarRV()
         configurarObservables()
     }
 
@@ -44,7 +45,6 @@ class MainActivity : AppCompatActivity() {
         viewmodel.descargarDatosPaises()
     }
 
-    /*
     private fun configurarRV() {
         val arrPaises = arrayOf( Pais("México", 5300),
             Pais("Argentina", 25234) )
@@ -58,7 +58,5 @@ class MainActivity : AppCompatActivity() {
         val divisor = DividerItemDecoration(this, layout.orientation)
         binding.rvPaises.addItemDecoration(divisor)
     }
-
-     */
 }
 
