@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DesplegandoInformacion</string>
+    <string name="nombrepais">NombrePais</string>
+    <string name="numerocasos">numeroCasos</string>
+</resources>
